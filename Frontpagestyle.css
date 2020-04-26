@@ -1,0 +1,271 @@
+.container > header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    grid-area: hd;
+    text-align: center;
+    font-size: 4em;
+    background-color: rgb(31, 31, 31);
+    margin-top: -0.2em;
+
+}
+ img {
+    width: 136vh;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.container > main {
+    background-color: rgb(48, 48, 48);
+    grid-area: main;
+    color: rgb(212, 212, 212);
+}
+
+main > p {
+    text-align: center;
+    padding: 1em;
+}
+
+.container > footer {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    grid-area: ft;
+    font-weight: small;
+    opacity: 0.6; 
+    text-align: center;
+    font-size: 0.8em;
+
+}
+.container > picture {
+
+    grid-area: pic;
+}
+.container>nav {
+    background-color: rgb(48, 48, 48);
+    text-align: center;
+    grid-area: sd;
+
+}
+.container> aside {
+    background-color: rgb(110, 110, 110);
+
+    text-align: left;
+    font-weight: bolder;
+    grid-area: as;
+    height: 2.5em;    
+}
+ h4 {   
+    color: rgb(17, 17, 17);
+    margin-top: 0.7em;
+    margin-left: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+ ul { 
+    cursor: default; 
+    margin-top: 6em;
+}
+
+li {   
+    background-color: rgb(177, 177, 177);
+    display: block;
+    width: 6em;
+    text-align: center;
+    cursor: default;
+    font-size: 1.5em;
+    position: relative;
+    margin-top: 2.5em;
+    border: thin solid rgb(177, 177, 177);
+    border-style: ridge;
+    
+}
+
+li:hover{
+    background-color: lightgray;
+
+}
+
+body {
+    background-color: rgb(66, 66, 66);
+
+}
+
+ .container {
+    background-color: rgb(66, 66, 66);
+    display: grid;
+    grid-template-columns: repeat(4, 1hr);
+    grid-template-rows: minmax(10px, auto) minmax(5px, auto) minmax(450px,auto) minmax(80px,auto);
+    grid-template-areas:  "hd hd hd hd" 
+                          "as as as as"  
+                          "sd pic pic main"
+                          "ft ft ft ft";
+  grid-gap: 5px;
+}
+
+@media (max-width: 1200px) { img {
+    width: 500px;
+}
+.container {
+    margin-right: -0.49em;
+    margin-left: -0.5em;
+
+}
+}
+
+
+@media (max-width: 849px) {.container {
+    grid-template-columns: repeat(2, 1hr);
+    grid-template-rows: minmax(10px, auto) minmax(50px,auto) minmax(400px,auto)
+                         minmax(10px,auto) minmax(10px,auto) minmax(10px,auto);
+    grid-template-areas: "hd hd"
+                        "sd sd"
+                        "pic pic"
+                          "main main"
+                          "as as"
+                          "ft ft";
+                          grid-gap: 0em;
+        margin-right: -0.5em;
+
+}
+  img {
+      margin-top: -0.8em;
+      width: 656px;
+      border-radius: 0px;
+      margin-left: 4em;
+}
+footer {
+    height: 5em;
+    margin-left: 5em;
+    width: 51.3em;
+}
+
+main {
+    margin-left: 4em;
+    width: 41em;
+}
+
+aside {
+    margin-left: 4em;
+    width: 41em;
+
+}
+
+header {
+    position: relative;
+    margin-left: 1em;
+    width: 10.24em;
+}
+
+li {
+    height: 1em;
+    display: inline-block;
+    margin-top: -19em;
+}
+nav {
+    background-color: yellowgreen;
+    margin-top: -4em;
+    margin-left: 4em;
+    height: 9em;
+    width: 41em;
+}
+}
+
+@media (max-width: 765px) {
+    .container{
+        margin-left: -2em;
+        margin-right: -0.5em;
+
+    }
+}
+
+@media (max-width: 730px) {
+    .container{
+        margin-left: -4em;
+        margin-right: -0.5em;
+
+    }
+}
+
+@media (max-width: 698px) {
+    .container{
+        margin-left: -0.5em;
+    }
+    img {
+        width: 480px;
+    }
+    header {
+        width: 7.5em;
+    }
+    nav {
+        width: 30em;
+    }
+    li {
+        width: 90px;
+    }
+    main {
+        width: 30em;
+    }
+    aside {
+        width: 30em;
+    }
+    footer {
+        width: 37.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin-left: -3.5em;
+    }
+}
+
+@media (max-width: 540px) {
+    .container {
+        margin-left: -4.5em;
+        margin-right: -0.5em;
+    }
+}
+
+@media (max-width: 510px) {.container {
+    grid-template-columns: repeat(2, 1hr);
+    grid-template-rows: minmax(10px, auto) minmax(10px, auto) minmax(400px,auto) minmax(80px, auto) minmax(10px,auto);
+    grid-template-areas: "hd hd"
+                         "sd sd"
+                         "pic pic"
+                          "main main"
+                          "as as"
+                          "ft ft";
+  grid-gap: 0px;
+}
+img {
+    width: 338px;
+}
+li {
+    height: 1em;
+    width: 142px;
+    margin-left: -2em;
+}
+nav {
+    width: 21.12em;
+}
+aside {
+    width: 21.12em;
+}
+main {
+    width: 21.12em;
+}
+footer {
+    width: 26.4em;
+}
+header {
+    width: 5.28em;
+}
+
+}
+
+
+

@@ -1,0 +1,96 @@
+ .herrcontainer {
+    background-color: rgb(66, 66, 66);
+    display: grid;
+    grid-template-columns: repeat(2, 1hr);
+    grid-template-rows: minmax(10px, auto) minmax(10px, auto) 
+                        minmax(10px, auto);
+    grid-template-areas:  "hd hd" 
+                          "pic1 pic2"  
+                          "pic3 pic4"
+                          "pic5 pic6"
+                          "ft ft";
+  grid-gap: 5px;
+}
+body {
+    background-color: rgb(66, 66, 66);
+
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
+#1 > img {
+    grid-area: pic1;
+}
+
+#2  > img {
+    grid-area: pic2;
+}
+
+#3  > img {
+    grid-area: pic3;
+}
+
+#4  > img {
+    grid-area: pic4;
+}
+
+#5  > img {
+    grid-area: pic5;
+}
+
+#6  > img {
+    grid-area: pic6;
+}
+
+.herrcontainer > header {
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+background-color: rgb(31, 31, 31);
+color: white;
+grid-area: hd;
+text-align: center;
+font-size: 4em;
+}
+
+.herrcontainer > footer {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    grid-area: ft;
+    font-weight: small;
+    opacity: 0.6; 
+    text-align: center;
+    font-size: 0.8em;
+}
+
+p {
+    text-align: center;
+}
+
+.imgtext {
+    text-align: justify;
+    width: [width of img];
+}
+ 
+.imgtext img {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+    .herrcontainer {
+        grid-template-columns: 1hr;
+        grid-template-rows: minmax(10px, auto) minmax(10px, auto) 
+                            minmax(10px, auto) minmax(10px, auto) minmax(10px, auto) 
+                            minmax(10px, auto) minmax(10px, auto) minmax(10px, auto);
+        grid-template-areas:  "hd" 
+                              "pic1"
+                              "pic2"  
+                              "pic3"
+                              "pic4"
+                              "pic5"
+                              "pic6"
+                              "ft";
+    }
+}

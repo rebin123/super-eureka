@@ -1,0 +1,76 @@
+
+
+.container {
+    background-color: rgb(66, 66, 66);
+    display: grid;
+    grid-template-columns: repeat(3, 1hr);
+    grid-template-rows: minmax(10px, auto) minmax(10px, auto) 
+                        minmax(10px, auto) minmax(10px, auto);
+    grid-template-areas:  "hd hd hd"
+                          "nv hh as" 
+                          "nv mn as"
+                          "ft ft ft";
+  grid-gap: 5px;
+}
+
+body {
+    background-color: rgb(66, 66, 66);
+
+}
+
+.container > nav {
+    grid-area: nv;
+    background-color: rgb(66, 66, 66);
+    color: rgb(66, 66, 66);
+}
+
+.container > aside {
+    grid-area: as;
+    background-color: rgb(66, 66, 66);
+    color: rgb(66, 66, 66);
+}
+
+
+.container > header {
+    
+    grid-area: hd;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    text-align: center;
+    font-size: 4em;
+
+}
+main > h4 {
+    grid-area: hh;
+    background-color: rgb(170, 170, 170);
+    text-align: center;
+    font-size: 1.5em;
+    height: 2em;
+    padding-top: 15px;  
+    border-radius: 10px;
+    margin-top: -62px;
+}
+
+
+.container > main {
+
+    grid-area: mn;
+    text-align: center;
+    background-color: rgb(167, 167, 167);
+    height: 25em;
+    border-radius: 10px;
+    padding-top: 2em;
+}
+.container > footer {
+    grid-area: ft;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-weight: small;
+    opacity: 0.6; 
+    text-align: center;
+    font-size: 0.8em;
+}
+
+
+
