@@ -35,6 +35,10 @@ main > p {
     font-size: 0.8em;
 
 }
+
+footer p {
+    margin-top: 0.5em;
+}
 .container > picture {
 
     grid-area: pic;
@@ -114,6 +118,7 @@ body {
     margin-left: -0.5em;
 
 }
+
 }
 
 
