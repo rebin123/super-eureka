@@ -79,6 +79,23 @@ p {
     display: block;
     margin: 0 auto;
 }
+ul {
+    position: absolute;
+    margin-top: 22em;
+    margin-left: -1em;
+    cursor: default; 
+
+}
+li {
+    display: inline;
+    color: black;
+    margin-left: -1em;
+
+}
+a {
+    color: black;
+}
+
 
 @media (max-width: 700px) {
     .herrcontainer {

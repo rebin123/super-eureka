@@ -72,5 +72,27 @@ main > h4 {
     font-size: 0.8em;
 }
 
+video {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    
+    }
+    ul {
+        text-align: left;
+        cursor: default; 
+        margin-top: -2em;
+    }
+
+li {
+    display: inline;
+    background-color: rgb(160, 160, 160);
+    color: rgb(32, 32, 32);  
+    font-size: 0.8em;
+    margin-left: -1em;
+}
+a {
+    color: rgb(56, 56, 56);
+}
 
 
